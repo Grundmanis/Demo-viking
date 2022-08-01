@@ -17,7 +17,7 @@ public class PlayerControls : MonoBehaviour
 
     private GameObject touchingObject;
 
-    public GameObject aimTarget;
+    // public GameObject aimTarget;
 
     private CharacterController _characterController;
 
@@ -119,7 +119,7 @@ public class PlayerControls : MonoBehaviour
         } 
         
         _animator.SetBool("Walk", isMoving);    
-        // _animator.SetBool("FastRun", isMovingFast);
+        _animator.SetBool("Run", isMovingFast);
     }
 
     // void OnTriggerEnter(Collider other) {
